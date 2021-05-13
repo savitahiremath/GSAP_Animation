@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+#navbar{
+    left:60%;
+    display: flex;
+    position: absolute;
+    justify-content:space-evenly;/* item have equal space around them */
+    margin-top: 50px; 
+    
+    
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .button1 {background-color: #2b0107;} /* Green */
+
+header,
+footer{
+    height: 50vh;
+    display: flex; /* elements fills the free space availale */
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrate, sans-serif;
+}
+
+#nature{
+background-image: url(images/nature.jpg);
+background-repeat: no-repeat;
+background-size: auto;
+
+
+}
+.text{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    
+}
+
+header h1{
+    font-size: 80px;
+    color:rgb(160, 243, 218);
+    font-weight: bolder;
+}
+.animation{
+
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.paper-plane{
+height: 100px;
+position: absolute;
+top:50%;
+left:0%;
+
+}
+span{
+
+    opacity: 0;
+    transition: all 2s ease;/* transition will occur for 2 seconds */
+    transform: translateY(50px);
+    display: inline-block;
+
+}
+span.fade{
+
+    opacity: 1;
+    transform: translateY(0px);
+}
